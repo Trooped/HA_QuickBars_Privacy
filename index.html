@@ -61,7 +61,18 @@
 <h3>Internet (INTERNET)</h3>
 <ul>
 <li>
-<p><strong>Purpose:</strong> This permission is used to establish a connection from the app to your own Home Assistant server over your local network or the internet, based on the URL You provide. No data is sent to Us or any other third-party service.</p>
+<p><strong>Purpose:</strong> This permission is used for two key network functions:</p>
+<ol>
+<li>To establish a connection from the app to your own Home Assistant server over your local network or the internet, based on the URL You provide.</li>
+<li>To allow the app to run a temporary, local web server on your device for the "Connect with Phone" feature. This server only operates on your local network to receive credentials from your phone.</li>
+</ol>
+<p>No data is sent to Us or any other third-party service.</p>
+</li>
+</ul>
+<h3>Access Wi-Fi State (ACCESS_WIFI_STATE)</h3>
+<ul>
+<li>
+<p><strong>Purpose:</strong> This permission is used to read your device's local network state. Its sole purpose is to determine your device's local IP address (e.g., <code>192.168.1.100</code>) so that it can be displayed on screen for the "Connect with Phone" setup feature. This information is not stored or transmitted off your device.</p>
 </li>
 </ul>
 <h2>In-App Purchases</h2>
@@ -76,6 +87,7 @@
 </ul>
 <h2>Security of Your Data</h2>
 <p>The security of Your data is important to Us. Your Home Assistant credentials are stored on your device using Android's encrypted storage facilities to protect them from unauthorized access. However, remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your data, We cannot guarantee its absolute security.</p>
+<p><strong>Cleartext Traffic:</strong> To ensure compatibility with Home Assistant servers running on a local network, this app permits unencrypted HTTP connections. This is necessary because many local Home Assistant instances do not use HTTPS. We strongly recommend that You secure your Home Assistant instance and use an encrypted HTTPS connection whenever possible, especially for connections over the internet.</p>
 <h2>Children's Privacy</h2>
 <p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information.</p>
 <h2>Links to Other Websites</h2>
